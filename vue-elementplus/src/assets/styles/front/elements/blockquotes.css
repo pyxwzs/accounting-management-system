@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* blockquote 1 */
+.blockquote-1 {
+	padding: 20px;
+	border: 1px solid rgba(0,0,0,0.2);
+	margin-bottom: 0px;
+	border-radius: 6px;
+	position: relative;
+	overflow: hidden;
+}
+.blockquote-1:after {
+	position: absolute;
+	content: "";
+	width: 4px;
+	height: 80%;
+	left: 0px;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: #000;
+}
+.blockquote-1 p {
+	font-style: italic;
+	color: #000;
+}
+.blockquote-1 .blockquote-footer {
+	margin: 0px 0px 0px 0px;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+/* blockquote 2 */
+.blockquote-2 {
+	padding: 20px;
+	background-color: rgba(0,0,0,0.1);
+	margin-bottom: 0px;
+	border-radius: 6px;
+	position: relative;
+	overflow: hidden;
+}
+.blockquote-2:after {
+	position: absolute;
+	content: "";
+	width: 4px;
+	height: 80%;
+	left: 0px;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: #000;
+}
+.blockquote-2 p {
+	font-style: italic;
+	color: #000;
+}
+.blockquote-2 .blockquote-footer {
+	margin: 0px 0px 0px 0px;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+/* blockquote 3 */
+.blockquote-3 {
+	padding: 20px;
+	background-color: #000;
+	margin-bottom: 0px;
+	border-radius: 6px;
+	position: relative;
+	overflow: hidden;
+}
+.blockquote-3:after {
+	position: absolute;
+	content: "";
+	width: 4px;
+	height: 80%;
+	left: 0px;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: #1de278;
+}
+.blockquote-3 p {
+	font-style: italic;
+	color: #fff;
+}
+.blockquote-3 .blockquote-footer {
+	margin: 0px 0px 0px 0px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+/* blockquote 4 */
+.blockquote-4 {
+	padding: 20px;
+	background-color: #1de278;
+	margin-bottom: 0px;
+	border-radius: 6px;
+	position: relative;
+	overflow: hidden;
+}
+.blockquote-4:after {
+	position: absolute;
+	content: "";
+	width: 4px;
+	height: 80%;
+	left: 0px;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: #000;
+}
+.blockquote-4 p {
+	font-style: italic;
+	color: #fff;
+}
+.blockquote-4 .blockquote-footer {
+	margin: 0px 0px 0px 0px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+}

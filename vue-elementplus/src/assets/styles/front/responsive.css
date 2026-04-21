@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 
+
+	Template Name: Multipurpose Bootstrap 5 Template
+	Author: Rainbow Design
+	
+*/
+
+/* Medium Devices, Desktops */
+@media (max-width: 991px) {
+  .header-lover .navbar-nav {
+    background-color: #333;
+    z-index: 99;
+    position: relative;
+  }
+  .header-lover .navbar .nav-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+  }
+  .header-lover .navbar .nav-item .nav-link {
+    padding: 14px 16px;
+    color: #999;
+  }
+  .header-lover .navbar-collapse {
+    z-index: 11;
+  }
+  .header-lover .navbar .nav-item.active .nav-link,
+  .header-lover .navbar .nav-item .nav-link:hover {
+    color: #fff;
+  }
+  .header-lover .dropdown-menu {
+    margin: 0px 15px 15px 15px;
+    padding: 0px;
+    border: 0px;
+    border-radius: 8px;
+    background-color: #000;
+    position: relative;
+  }
+  .header-lover .dropdown-menu:before {
+    background-color: #000;
+  }
+  .header-lover .dropdown-menu .dropdown-item:hover {
+    color: #fff;
+  }
+  .header-lover .navbar .nav-item.header-search {
+    display: none;
+  }
+  .navbar .mega-dropdown-menu {
+    width: auto;
+    padding: 15px;
+    border-radius: 6px !important;
+  }
+  .navbar .mega-dropdown-menu .container {
+    background: transparent;
+  }
+  .navbar .mega-dropdown-menu ul {
+    border-right: 0px;
+  }
+  .navbar .mega-dropdown-menu ul li {
+    border-bottom: 0px !important;
+  }
+  .navbar .mega-dropdown-menu:before {
+    display: inline-block;
+  }
+  .slider .carousel-item {
+    padding: 300px 0px;
+  }
+  .mega-dropdown-menu-title {
+    color: #fff;
+  }
+  .banner-4 .banner-caption-box h2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .banner-newsletter input {
+    margin-bottom: 6px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media (max-width: 767px) {
+  .header-top-right ul.header-top-menu li {
+    margin-right: 12px;
+  }
+  .slider .carousel-item {
+    padding: 200px 0px;
+  }
+  .filterlink li span {
+    padding: 6px 10px 6px 10px;
+    font-size: 10px;
+  }
+  .list-view .line-box {
+    float: left;
+    width: 50%;
+    min-height: inherit;
+    padding: 0px 0px;
+    border-bottom: 0px;
+  }
+  .list-view .price {
+    float: right;
+    width: 50%;
+  }
+  .all-btn a {
+    margin-bottom: 6px;
+    padding: 8px 14px !important;
+  }
+  .list-view .booking-box {
+    border-left: 0px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media (max-width: 575px) {
+  .header-social {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .header-top-right {
+    text-align: center;
+    display: block !important;
+  }
+  .slider .carousel-caption h2 {
+    line-height: 36px;
+    font-size: 30px;
+  }
+  .slider-2 .btn-style-1 {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  .slider-2 .video-btn1 {
+    font-size: 14px;
+  }
+  .video-btn1 i {
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    font-size: 8px;
+    margin-right: 0px;
+  }
+  .filterlink li,
+  .filterlink li span {
+    width: 100%;
+  }
+  .filterlink li span {
+    padding: 10px;
+  }
+  .footer-link li {
+    padding-bottom: 12px;
+    margin-right: 0px !important;
+    width: 100%;
+    text-align: left;
+  }
+  .single-portfolio-img {
+    padding: 20px;
+  }
+  .form-signin .form-check-label,
+  .form-signin .forgot-pass a {
+    font-size: 11px;
+  }
+  .form-signin .form-check-input {
+    width: 14px;
+    height: 14px;
+  }
+  .form-signin .form-check-label {
+    padding-left: 0px;
+  }
+  .form-signin .no-account {
+    font-size: 14px;
+  }
+  .contact-info li span {
+    width: 90px;
+  }
+  .coming-soon-text ul li span {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 11px;
+  }
+  .coming-soon-text ul li p {
+    font-size: 11px;
+  }
+  .element-title {
+    font-size: 20px;
+  }
+  .list-view .img {
+    margin-bottom: 10px;
+  }
+}

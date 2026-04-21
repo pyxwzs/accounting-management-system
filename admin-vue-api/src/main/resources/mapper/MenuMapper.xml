@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.it.mapper.MenuMapper">
+    <select id="getMenuInfoByUserId" resultType="com.it.entity.Menu">
+		select p.id as id,p.name as name,p.icon as icon,p.url as url,
+		p.create_time as create_time,p.parent_id as parent_id,p.num as num,p.component as component from sys_role_permission,sys_user,sys_menu p
+		WHERE sys_role_permission.item_id=p.id and sys_role_permission.role_id=sys_user.roleId and sys_user.id=#{userId}
+		ORDER BY p.num
+	</select>
+</mapper>

@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* list style 1 */
+.list-style-1 li {
+	padding-bottom: 10px;
+	font-size: 14px;
+	color: #333;
+}
+.list-style-1 li:last-child {
+	padding-bottom: 0px;
+}
+.list-style-1 li i {
+	color: #1de278;
+	margin-right: 6px;
+}
+/* list style 2 */
+.list-style-2 li {
+	padding-bottom: 10px;
+	font-size: 14px;
+	color: #333;
+}
+.list-style-2 li:last-child {
+	padding-bottom: 0px;
+}
+.list-style-2 li i {
+	color: #1de278;
+	margin-right: 6px;
+}
+/* list style 3 */
+.list-style-3 {
+	margin-left: 15px;
+}
+.list-style-3 li {
+	padding-bottom: 10px;
+	font-size: 14px;
+	color: #1de278;
+	padding-left: 6px;
+	list-style: upper-roman;
+}
+.list-style-3 li span {
+	color: #000;
+}
+.list-style-3 li:last-child {
+	padding-bottom: 0px;
+}
+/* list style 4 */
+.list-style-4 {
+	counter-reset: li
+}
+.list-style-4 li {
+	counter-increment: li;
+	padding-bottom: 10px;
+	color: #000;
+	font-size: 14px;
+}
+.list-style-4 li:last-child {
+	padding-bottom: 0px;
+}
+.list-style-4 li:before {
+	content: counter(li);
+	color: #1de278;
+	padding-right: 10px;
+}
+/* list style 5 */
+.list-style-5 {
+	margin-left: 15px;
+}
+.list-style-5 li {
+	padding-bottom: 10px;
+	font-size: 14px;
+	color: #1de278;
+	padding-left: 6px;
+	list-style: upper-alpha;
+}
+.list-style-5 li span {
+	color: #000;
+}
+.list-style-5 li:last-child {
+	padding-bottom: 0px;
+}
+/* list style 6 */
+.list-style-6 {
+	margin-left: 15px;
+}
+.list-style-6 li {
+	padding-bottom: 10px;
+	font-size: 14px;
+	color: #1de278;
+	padding-left: 6px;
+	list-style: lower-alpha;
+}
+.list-style-6 li span {
+	color: #000;
+}
+.list-style-6 li:last-child {
+	padding-bottom: 0px;
+}
+
+/* Medium Devices, Desktops */
+@media (max-width: 991px) {
+}
+
+/* Small Devices, Tablets */
+@media (max-width: 767px) {
+}
+
+/* Extra Small Devices, Phones */
+@media (max-width: 575px) {
+}

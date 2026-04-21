@@ -1,0 +1,4 @@
+/.DS_Store
+node_modules/
+# Maven：任意模块下的 target（/target 只匹配仓库根目录，会漏掉 admin-vue-api/target）
+target/

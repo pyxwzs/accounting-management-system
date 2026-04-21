@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* dropcap style1 */
+.dropcap-style1 {
+	float: left;
+	height: 48px;
+	width: 48px;
+	line-height: 48px;
+	font-size: 30px;
+	display: inline-block;
+	font-weight: 700;
+	color: #000;
+	text-align: center;
+}
+/* dropcap style2 */
+.dropcap-style2 {
+	float: left;
+	height: 48px;
+	width: 48px;
+	line-height: 48px;
+	font-size: 30px;
+	display: inline-block;
+	font-weight: 700;
+	color: #000;
+	margin: 0px 10px 0px 0px;
+	border: 1px solid rgba(0,0,0,0.5);
+	text-align: center;
+}
+/* dropcap style3 */
+.dropcap-style3 {
+	float: left;
+	height: 48px;
+	width: 48px;
+	line-height: 48px;
+	font-size: 30px;
+	display: inline-block;
+	font-weight: 700;
+	color: #fff;
+	margin: 0px 10px 0px 0px;
+	background-color: rgba(0,0,0,0.8);
+	text-align: center;
+}
+/* dropcap style4 */
+.dropcap-style4 {
+	float: left;
+	height: 48px;
+	width: 48px;
+	line-height: 48px;
+	font-size: 26px;
+	display: inline-block;
+	font-weight: 600;
+	border-radius: 100%;
+	color: #000;
+	margin: 0px 10px 0px 0px;
+	border: 1px solid rgba(0,0,0,0.5);
+	text-align: center;
+}
+/* dropcap style5 */
+.dropcap-style5 {
+	float: left;
+	height: 48px;
+	width: 48px;
+	line-height: 48px;
+	font-size: 26px;
+	display: inline-block;
+	font-weight: 600;
+	border-radius: 100%;
+	color: #fff;
+	margin: 0px 10px 0px 0px;
+	background-color: rgba(0,0,0,0.8);
+	text-align: center;
+}
+/* dropcap style6 */
+.dropcap-style6 {
+	float: left;
+	height: 48px;
+	width: 48px;
+	line-height: 48px;
+	font-size: 26px;
+	display: inline-block;
+	font-weight: 600;
+	border-radius: 100%;
+	color: #fff;
+	margin: 0px 10px 0px 0px;
+	background-color: #1de278;
+	text-align: center;
+}

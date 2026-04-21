@@ -1,0 +1,69 @@
+# UTF-8
+server:
+  port: 8080
+
+# 上传目录：相对运行目录，会在项目下自动创建 upload 文件夹
+file:
+  upload:
+    dir: upload
+
+spring:
+  thymeleaf:
+    mode: LEGACYHTML5
+    suffix: .html
+  datasource:
+    username: root
+    password: Zxyd1xj3NsT6PottAYNL
+    # useSSL=false：避免内网/本地库未配证书时出现 SSLHandshakeException；生产若走 SSL 改为 useSSL=true 并配置 truststore
+    url: jdbc:mysql://100.64.0.1:3306/accounting_db?useSSL=false&verifyServerCertificate=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.jdbc.Driver
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  mail:
+    host: smtp.qq.com
+    protocol: smtps
+    port: 465
+    username: 1156326165@qq.com
+    password: wufjhbiayspqbaej
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            enable: true
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  type-aliases-package: com.it.entity
+  dialectType: mysql
+  configuration:
+    map-underscore-to-camel-case: false
+  global-config:
+    id-type: 3
+    db-column-underline: false
+    refresh-mapper: true
+    capital-mode: false
+
+# Shiro JWT
+shiro:
+  jwt:
+    secret: kGgySFGcfQML4ZOvvlE7856YvSCsbjBf
+    # token 有效期（示例为 1 天），单位毫秒
+    expire: 86400000
+    header:
+      # 签名算法
+      alg: HS256
+      # token 类型
+      typ: JWT
+
+# 财经 RSS：拉取快讯的地址（新浪 hot_roll.xml 已 404，默认改为中新网财经 RSS）
+finance:
+  rss:
+    url: http://www.chinanews.com.cn/rss/finance.xml
+    userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+    # 是否启用定时自动同步（false 则仅前台手动「同步最新资讯」）
+    scheduled:
+      enabled: true
+    # 定时 cron（默认每 2 小时整点执行一次；秒 分 时 日 月 周）
+    cron: "0 0 */2 * * ?"

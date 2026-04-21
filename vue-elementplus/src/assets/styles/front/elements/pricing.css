@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Pricing 1 */
+.single-pricing-1 {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.single-pricing-1 .pricing-head {
+  position: relative;
+  text-align: center;
+  padding: 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.single-pricing-1 .pricing-head h3 {
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.single-pricing-1 .pricing-classic-price {
+  font-weight: 600;
+  letter-spacing: 0;
+  color: #000;
+  font-size: 30px;
+  line-height: 25px;
+}
+.single-pricing-1 .pricing-classic-price span {
+  font-size: 14px;
+  font-weight: 400;
+  width: 100%;
+  display: inline-block;
+}
+.single-pricing-1 .pricing-body {
+  padding: 30px;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.single-pricing-1 ul.feature {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.single-pricing-1 ul.feature li {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 16px;
+  text-transform: capitalize;
+  color: #888888;
+}
+.single-pricing-1 ul.feature li .fa-check {
+  color: #012a5e;
+}
+.single-pricing-1 ul.feature li .fa-times {
+  color: #ee4155;
+}
+.single-pricing-1 ul.feature li:last-child {
+  padding-bottom: 0;
+}
+.single-pricing-1:hover,
+.single-pricing-1.active {
+  border-color: #323232;
+}
