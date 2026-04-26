@@ -14,7 +14,7 @@
 
 	// 引入echarts
 	import * as echarts from 'echarts'
-
+	import 'echarts-wordcloud'
 	import 'echarts/extension/bmap/bmap'
 
 	import utils from "@/utils/utils.js";

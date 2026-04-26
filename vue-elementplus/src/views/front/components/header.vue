@@ -113,10 +113,14 @@ const logout = () => {
   });
 };
 
-// 全局点击事件处理函数
+// 全局点击事件处理函数（未登录时没有用户下拉，querySelector 可能为 null）
 const handleClickOutside = (event) => {
-  const navbarList = document.querySelector('.dropdown-toggle');
-  if (!navbarList.contains(event.target)) {
+  const dropdown = document.querySelector('.header-top-right .dropdown');
+  if (!dropdown) {
+    iqShow.value = false;
+    return;
+  }
+  if (!dropdown.contains(event.target)) {
     iqShow.value = false;
   }
 };

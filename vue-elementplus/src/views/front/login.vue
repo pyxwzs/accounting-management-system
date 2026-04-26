@@ -115,7 +115,10 @@ const submit = () => {
     loginFormRef.value.validate((valid) => {
         if (valid) {
             //TODO 调用接口登录账号
-            instances.get("/user/loginFront",{params:loginForm}).then((res)=>{ 
+            instances.post("/user/loginFront", {
+                username: loginForm.username,
+                password: loginForm.password
+            }).then((res) => {
                 utils.showSucess("登录成功!")
                 userStore.setUser(res.data.user)
                 userStore.setToken(res.data.token)

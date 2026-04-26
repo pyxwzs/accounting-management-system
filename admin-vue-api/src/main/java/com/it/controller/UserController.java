@@ -8,6 +8,7 @@ import com.it.service.UserService;
 import com.it.util.AuthUserUtils;
 import com.it.util.BusinessException;
 import com.it.util.ResponseCode;
+import com.it.vo.req.LoginFrontReqVO;
 import com.it.vo.req.ResetPwdPwdReqVO;
 import com.it.vo.req.UpdatePwdReqVO;
 import com.it.vo.resp.HomeRespVO;
@@ -67,18 +68,15 @@ public class UserController {
     }
 
     /**
-     * @param username 账号
-     * @param password 密码(如果需要加密则进行加密处理,不需要则跳过)
-     * @return 返回响应对象, 包含 用户主键id,token,和账号名
+     * 前台登录：POST + JSON 请求体，避免账号密码出现在 URL 查询参数中。
      */
-    @ApiOperation(value = "前台登录接口", notes = "* @param username 账号\n" +
-            "     * @param password 密码(如果需要加密则进行加密处理,不需要则跳过)\n" +
-            "     * @return 返回响应对象,包含 用户主键id,token,和账号名)\n" +
-            "系统采用jwt+shiro进行登录认证，调用登录接口后验证用户信息之后颁发token," +
-            "后续所有请求会携带token信息，然后有shrio去判断token信息")
-    @GetMapping("/loginFront")
-    public LoginRespVO loginFront(String username, String password) {
-        return userService.loginFront(username, password);
+    @PostMapping("/loginFront")
+    @ApiOperation(value = "前台登录接口", notes = "请求体 JSON：username、password。图片验证码仅前端校验。")
+    public LoginRespVO loginFront(@RequestBody LoginFrontReqVO req) {
+        if (req == null || req.getUsername() == null || req.getPassword() == null) {
+            throw new BusinessException(ResponseCode.DATA_PARAM_ERROR.getCode(), ResponseCode.DATA_PARAM_ERROR.getMessage());
+        }
+        return userService.loginFront(req.getUsername().trim(), req.getPassword());
     }
 
     /**
