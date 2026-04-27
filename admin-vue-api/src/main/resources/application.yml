@@ -11,16 +11,11 @@ spring:
   thymeleaf:
     mode: LEGACYHTML5
     suffix: .html
-  http:
-    encoding:
-      charset: UTF-8
-      force: true
-      enabled: true
   datasource:
     username: root
     password: root1234.
     # useSSL=false：避免内网/本地库未配证书时出现 SSLHandshakeException；生产若走 SSL 改为 useSSL=true 并配置 truststore
-    url: jdbc:mysql://127.0.0.1:3306/accounting_db?useSSL=false&verifyServerCertificate=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://192.168.101.127:3306/accounting_db?useSSL=false&verifyServerCertificate=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
     driver-class-name: com.mysql.jdbc.Driver
   mvc:
     pathmatch:
